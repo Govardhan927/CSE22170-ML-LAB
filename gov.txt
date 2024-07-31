@@ -1,0 +1,15 @@
+1) def checksum(list1):
+    
+    count=0
+    for i in range(len(list1)):
+        a = list1[i]
+        for j in range(i +1, len(list1)):
+            if (a + list1[j]) == 10:
+                count = count + 1
+    return count
+    
+
+
+list1 = [2,7,4,8,3,6]
+result = checksum(list1)
+print(result)
